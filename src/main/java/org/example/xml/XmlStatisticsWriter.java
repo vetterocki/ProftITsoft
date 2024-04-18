@@ -26,10 +26,6 @@ public class XmlStatisticsWriter {
     try (BufferedWriter bw = Files.newBufferedWriter(path.resolve(pathForXml));
          ToXmlGenerator toXmlGenerator = xmlFactory.createGenerator(bw)) {
 
-//      Set<XmlItem> xmlItems = groupedByAttribute.entrySet().stream()
-//          .map(entry -> new XmlItem(entry.getKey(), entry.getValue()))
-//          .collect(collectingAndThen(toCollection(TreeSet::new), TreeSet::descendingSet));
-
       List<XmlItem> xmlItems = groupedByAttribute.entrySet().stream()
           .map(entry -> new XmlItem(entry.getKey(), entry.getValue()))
           .sorted(Comparator.comparing(XmlItem::getCount).reversed())

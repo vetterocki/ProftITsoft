@@ -1,6 +1,5 @@
 package org.example.domain;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.HashSet;
 import java.util.Set;
 import lombok.Data;

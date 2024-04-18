@@ -19,12 +19,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 
 public class XmlStatisticsWriterTest {
-  private XmlStatisticsWriter xmlStatisticsWriter;
-
-  @BeforeEach
-  public void setup() {
-    xmlStatisticsWriter = new XmlStatisticsWriter();
-  }
+  private final XmlStatisticsWriter xmlStatisticsWriter = new XmlStatisticsWriter();
 
   @ParameterizedTest
   @Order(1)
@@ -38,14 +33,13 @@ public class XmlStatisticsWriterTest {
   }
 
 
-  /*
-  Please, run this test AFTER xml files were created.
-   */
-
   @Test
   @Order(2)
   @DisplayName("Testing XML file content to meet requirements.")
   public void testXmlFileContent() {
+    Path path = Paths.get("src/test/resources");
+    xmlStatisticsWriter.writeStatistics(Map.of("Toyota", 3L, "Ford", 2L, "Tesla", 1L),
+        "car_manufacturer", path);
     Path xmlFile = Paths.get("src/test/resources/statistics_by_car_manufacturer.xml");
     String expectedContent = """
         <statistics>

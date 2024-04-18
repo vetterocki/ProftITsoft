@@ -1,0 +1,58 @@
+[
+  {
+    "model": "Prius",
+    "car_manufacturer": "Toyota",
+    "year_manufactured": 1997,
+    "color": "blue",
+    "car_types": "Sport, Sedan"
+  },
+  {
+    "model": "Model 3",
+    "car_manufacturer": "Tesla",
+    "year_manufactured": 2017,
+    "color": "red",
+    "car_types": "Electric, Sedan"
+  },
+  {
+    "model": "Civic",
+    "car_manufacturer": "Honda",
+    "year_manufactured": 1972,
+    "color": "green",
+    "car_types": "Sedan"
+  },
+  {
+    "model": "Mustang",
+    "car_manufacturer": "Ford",
+    "year_manufactured": 1964,
+    "color": "yellow",
+    "car_types": "Muscle, Coupe"
+  },
+  {
+    "model": "Mustang",
+    "car_manufacturer": "Ford",
+    "year_manufactured": 1964,
+    "color": "yellow",
+    "car_types": "Muscle, Coupe"
+  },
+  {
+    "model": "Prius",
+    "car_manufacturer": "Toyota",
+    "year_manufactured": 1997,
+    "color": "blue",
+    "car_types": "Sport, Sedan"
+  },
+  {
+    "model": "Prius",
+    "car_manufacturer": "Toyota",
+    "year_manufactured": 1997,
+    "color": "blue",
+    "car_types": "Sport, Sedan"
+  },
+  {
+    "model": null,
+    "car_manufacturer": null,
+    "year_manufactured": null,
+    "color": null,
+    "car_types": null
+  }
+]
